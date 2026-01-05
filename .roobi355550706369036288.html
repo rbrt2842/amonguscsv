@@ -1,0 +1,2011 @@
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="public,max-age=60,s-maxage=60,must-revalidate,proxy-revalidate" http-equiv="Cache-control"/>
+  <title>
+   5UP Community - Ranked Among Us Leaderboards
+  </title>
+  <link href="/images/favicon/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+  <link href="/images/favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+  <link href="/images/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+  <link href="/images/favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+  <link href="/images/favicon/site.webmanifest" rel="manifest"/>
+  <script async="" data-ad-client="ca-pub-3124675610835549" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+  </script>
+  <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" rel="stylesheet">
+   <link href="/stylesheet2.css" rel="stylesheet" type="text/css"/>
+   <script language="javascript">
+   </script>
+   <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-KNDLFGVKYG">
+   </script>
+   <script>
+    window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-KNDLFGVKYG');
+   </script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+   </script>
+   <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" rel="stylesheet">
+    <script crossorigin="anonymous" integrity="sha512-UwcC/iaz5ziHX7V6LjSKaXgCuRRqbTp1QHpbOJ4l1nw2/boCfZ2KlFIqBUA/uRVF0onbREnY9do8rM/uT/ilqw==" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js">
+    </script>
+    <script language="javascript">
+     $(document).ready(function($) {
+	/*$(".clickable-row").click(function() {
+		window.location = $(this).data("href");
+	});*/
+	$(".clickable-td").click(function() {
+		if($(this).parent().data("href"))
+			window.location = $(this).parent().data("href");
+	});
+});
+    </script>
+   </link>
+  </link>
+ </head>
+ <body id="bodyDefault">
+  <div style="position: fixed; bottom: 0px; left: 0px; z-index: -1; width:100%; min-height: 100vh; overflow: hidden">
+   <div class="container">
+    <img class="col-xl-2 col-4 ml-auto" src="/images/AmongUs/comet_only.png" style="position: fixed; top:25; right:5%;"/>
+   </div>
+  </div>
+  <div style="position: fixed; bottom: 0px; left: 0px; z-index: -1; width:100%; min-height: 100%; overflow: hidden">
+   <div class="container">
+    <img class="col-xl-5 col-lg-6 col-md-8 mx-auto" src="/images/AmongUs/shhh.png" style="display:block; padding-top: 80;"/>
+   </div>
+  </div>
+  <div style="position: fixed; bottom: 0px; left: 0px; z-index: -1; width:100%; min-height: 100vh; overflow: hidden">
+   <div class="container">
+    <img class="col-xl-3 col-lg-5 col-5 ml-auto" src="/images/AmongUs/5UP.png" style="position: fixed; top:100; left:2%;"/>
+   </div>
+  </div>
+  <div style="position: fixed; bottom: 0px; left: 0px; z-index: -1; width:100%; min-height: 100vh; overflow: hidden">
+   <img class="col-xl-6 col-lg-8 col-10 mx-auto align-baseline" src="/images/AmongUs/steam_AboutBanner.png" style="position: fixed; bottom: 0;"/>
+  </div>
+  <div align="center" class="container-lg" id="divBody">
+   <nav class="navbar navbar-expand-sm sticky-top">
+    <button class="navbar-toggler" data-target="#navbarResponsiveLeft" data-toggle="collapse" type="button">
+     Main
+     <br/>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsiveLeft">
+     <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+       <a class="nav-link" href="https://www.rankedamongus.com">
+        Home
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="https://www.rankedamongus.com/rules">
+        Rules
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="https://www.rankedamongus.com/aboutus">
+        AboutUs
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="https://www.rankedamongus.com/blog">
+        Blog
+       </a>
+      </li>
+      <li class="nav-item dropdown">
+       <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="navbarDropdown2">
+        Score &amp; Leaderboards
+       </a>
+       <div aria-labelledby="navbarDropdown2" class="dropdown-menu nav-bar-dark">
+        <div class="dropdown-header">
+         Discord Servers
+        </div>
+        <a class="dropdown-item" href="/5UP/">
+         <img src="/images/AmongUs/5UP.png" style="height: 20px;padding-right: 5px;"/>
+         5UP Community
+         <span class="badge badge-danger">
+          New PreSeason
+         </span>
+        </a>
+        <a class="dropdown-item" href="/amongus_gaming/">
+         <img src="/images/AmongUs/amongus_gaming.png" style="height: 20px;padding-right: 5px;"/>
+         Among us Gaming
+        </a>
+        <a class="dropdown-item" href="/amongus_norge/">
+         <img src="/images/AmongUs/amongus_norge.png" style="height: 20px;padding-right: 5px;"/>
+         Amoung Us Norge
+         <span class="badge badge-secondary">
+          <i class="fab fa-font-awesome-flag">
+          </i>
+          Norwegian
+         </span>
+        </a>
+        <a class="dropdown-item" href="/RAU_tournament/">
+         <img src="/images/favicon/favicon-32x32.png" style="height: 20px;padding-right: 5px;"/>
+         Public Tournament
+         <span class="badge badge-primary">
+          <i class="fas fa-stopwatch">
+          </i>
+          Resets when inactive for 1 hour!
+         </span>
+        </a>
+        <div class="dropdown-divider">
+        </div>
+        <div class="dropdown-header">
+         <i class="fas fa-sort-amount-down">
+         </i>
+         Past and Expired Rank Leaderboards
+        </div>
+        <div class="dropdown-header">
+         <h6>
+          <img src="/images/AmongUs/5UP.png" style="height: 20px;padding-right: 5px;"/>
+          AmongUs Gaming Seasons:
+          <a class="btn btn-outline-dark btn-sm px-2 ml-2" href="/5UP/?tournament=Season 1" style="font-size: 0.8em">
+           01
+           <i class="fas fa-sort-amount-down">
+           </i>
+          </a>
+         </h6>
+        </div>
+        <div class="dropdown-header">
+         <h6>
+          <img src="/images/AmongUs/amongus_gaming.png" style="height: 20px;padding-right: 5px;"/>
+          AmongUs Gaming Seasons:
+          <a class="btn btn-outline-dark btn-sm px-2 ml-2" href="/amongus_gaming/?tournament=Season 11" style="font-size: 0.8em">
+           11
+           <i class="fas fa-sort-amount-down">
+           </i>
+          </a>
+          <a class="btn btn-outline-dark btn-sm px-2" href="/amongus_gaming/?tournament=Season 10" style="font-size: 0.8em">
+           10
+           <i class="fas fa-sort-amount-down">
+           </i>
+          </a>
+          <a class="btn btn-outline-dark btn-sm px-2" href="/amongus_gaming/?tournament=Season 9" style="font-size: 0.8em">
+           09
+           <i class="fas fa-sort-amount-down">
+           </i>
+          </a>
+          <a class="btn btn-outline-dark btn-sm px-2" href="/amongus_gaming/?tournament=Season 8" style="font-size: 0.8em">
+           08
+           <i class="fas fa-sort-amount-down">
+           </i>
+          </a>
+          <a class="btn btn-outline-dark btn-sm px-2" href="/amongus_gaming/?tournament=Season 7" style="font-size: 0.8em">
+           07
+           <i class="fas fa-sort-amount-down">
+           </i>
+          </a>
+          <a class="btn btn-outline-dark btn-sm px-2" href="/amongus_gaming/?tournament=Season 6" style="font-size: 0.8em">
+           06
+           <i class="fas fa-sort-amount-down">
+           </i>
+          </a>
+          <br/>
+          <a class="btn btn-outline-dark btn-sm px-2" href="/amongus_gaming/?tournament=Season 5" style="font-size: 0.8em">
+           05
+           <i class="fas fa-sort-amount-down">
+           </i>
+          </a>
+          <a class="btn btn-outline-dark btn-sm px-2" href="/amongus_gaming/?tournament=Season 4" style="font-size: 0.8em">
+           04
+           <i class="fas fa-sort-amount-down">
+           </i>
+          </a>
+          <a class="btn btn-outline-dark btn-sm px-2" href="/amongus_gaming/?tournament=Season 3" style="font-size: 0.8em">
+           03
+           <i class="fas fa-sort-amount-down">
+           </i>
+          </a>
+          <a class="btn btn-outline-dark btn-sm px-2" href="/amongus_gaming/?tournament=Season 2" style="font-size: 0.8em">
+           02
+           <i class="fas fa-sort-amount-down">
+           </i>
+          </a>
+          <a class="btn btn-outline-dark btn-sm px-2" href="/amongus_gaming/?tournament=Season 1" style="font-size: 0.8em">
+           01
+           <i class="fas fa-sort-amount-down">
+           </i>
+          </a>
+          <a class="btn btn-outline-dark btn-sm px-2" href="/amongus_gaming/?tournament=Season 0" style="font-size: 0.8em">
+           00
+           <i class="fas fa-sort-amount-down">
+           </i>
+          </a>
+         </h6>
+        </div>
+        <div class="dropdown-header">
+         <h6>
+          <img src="https://scoreboard.rankedamongus.com/images/AmongUs/au_france.png" style="height: 20px;padding-right: 5px;"/>
+          AmongUs FR Seasons:
+          <a class="btn btn-outline-dark btn-sm px-2 ml-2" href="/amongus_fr/?tournament=Season 3" style="font-size: 0.8em">
+           03
+           <i class="fas fa-sort-amount-down">
+           </i>
+          </a>
+          <a class="btn btn-outline-dark btn-sm px-2" href="/amongus_fr/?tournament=Season 2" style="font-size: 0.8em">
+           02
+           <i class="fas fa-sort-amount-down">
+           </i>
+          </a>
+          <a class="btn btn-outline-dark btn-sm px-2" href="/amongus_fr/?tournament=Season 1" style="font-size: 0.8em">
+           01
+           <i class="fas fa-sort-amount-down">
+           </i>
+          </a>
+          <a class="btn btn-outline-dark btn-sm px-2" href="/amongus_fr/?tournament=Season 0" style="font-size: 0.8em">
+           00
+           <i class="fas fa-sort-amount-down">
+           </i>
+          </a>
+         </h6>
+        </div>
+        <div class="dropdown-header">
+         <h6>
+          <img src="/images/AmongUs/JellyImage.png" style="height: 20px;padding-right: 5px;"/>
+          JellyPeanuts Seasons:
+          <a class="btn btn-outline-dark btn-sm px-2 ml-2" href="/amongus_jellypeanut/?tournament=Season 6" style="font-size: 0.8em">
+           06
+           <i class="fas fa-sort-amount-down">
+           </i>
+          </a>
+          <a class="btn btn-outline-dark btn-sm px-2" href="/amongus_jellypeanut/?tournament=Season 5" style="font-size: 0.8em">
+           05
+           <i class="fas fa-sort-amount-down">
+           </i>
+          </a>
+          <a class="btn btn-outline-dark btn-sm px-2" href="/amongus_jellypeanut/?tournament=Season 4" style="font-size: 0.8em">
+           04
+           <i class="fas fa-sort-amount-down">
+           </i>
+          </a>
+          <a class="btn btn-outline-dark btn-sm px-2" href="/amongus_jellypeanut/?tournament=Season 3" style="font-size: 0.8em">
+           03
+           <i class="fas fa-sort-amount-down">
+           </i>
+          </a>
+          <a class="btn btn-outline-dark btn-sm px-2" href="/amongus_jellypeanut/?tournament=Season 2" style="font-size: 0.8em">
+           02
+           <i class="fas fa-sort-amount-down">
+           </i>
+          </a>
+          <a class="btn btn-outline-dark btn-sm px-2" href="/amongus_jellypeanut/?tournament=Season 1" style="font-size: 0.8em">
+           01
+           <i class="fas fa-sort-amount-down">
+           </i>
+          </a>
+         </h6>
+        </div>
+        <div class="dropdown-header">
+         <h6>
+          <img src="/images/AmongUs/amongus_norge.png" style="height: 20px;padding-right: 5px;"/>
+          Among us Norge Season:
+          <a class="btn btn-outline-dark btn-sm px-2 ml-2" href="/amongus_norge/?tournament=Season 3" style="font-size: 0.8em">
+           03
+           <i class="fas fa-sort-amount-down">
+           </i>
+          </a>
+          <a class="btn btn-outline-dark btn-sm px-2" href="/amongus_norge/?tournament=Season 2" style="font-size: 0.8em">
+           02
+           <i class="fas fa-sort-amount-down">
+           </i>
+          </a>
+          <a class="btn btn-outline-dark btn-sm px-2" href="/amongus_norge/?tournament=Season 1" style="font-size: 0.8em">
+           01
+           <i class="fas fa-sort-amount-down">
+           </i>
+          </a>
+          <a class="btn btn-outline-dark btn-sm px-2" href="/amongus_norge/?tournament=Season 0" style="font-size: 0.8em">
+           00
+           <i class="fas fa-sort-amount-down">
+           </i>
+          </a>
+         </h6>
+        </div>
+        <div class="dropdown-header">
+         <h6>
+          <img src="/images/AmongUs/bonfire_logo.png" style="height: 20px;padding-right: 5px;"/>
+          Bonfire Season:
+          <a class="btn btn-outline-dark btn-sm px-2 ml-2" href="/amongusranked/?tournament=Season 5" style="font-size: 0.8em">
+           05
+           <i class="fas fa-sort-amount-down">
+           </i>
+          </a>
+          <a class="btn btn-outline-dark btn-sm px-2" href="/amongusranked/?tournament=Season 4" style="font-size: 0.8em">
+           04
+           <i class="fas fa-sort-amount-down">
+           </i>
+          </a>
+          <a class="btn btn-outline-dark btn-sm px-2" href="/amongusranked/?tournament=Season 3" style="font-size: 0.8em">
+           03
+           <i class="fas fa-sort-amount-down">
+           </i>
+          </a>
+          <a class="btn btn-outline-dark btn-sm px-2" href="/amongusranked/?tournament=Season 2" style="font-size: 0.8em">
+           02
+           <i class="fas fa-sort-amount-down">
+           </i>
+          </a>
+          <a class="btn btn-outline-dark btn-sm px-2" href="/amongusranked/?tournament=Season 1" style="font-size: 0.8em">
+           01
+           <i class="fas fa-sort-amount-down">
+           </i>
+          </a>
+         </h6>
+        </div>
+        <div class="dropdown-header">
+         <h6>
+          <img src="https://cdn.discordapp.com/icons/813595972915036224/456a9596a6d53b142899d8ea18b2ea1c.png" style="height: 20px;padding-right: 5px;"/>
+          EVNT:
+          <a class="btn btn-outline-dark btn-sm px-2" href="/amongus_evnt/?tournament=Season 1" style="font-size: 0.8em">
+           01
+           <i class="fas fa-sort-amount-down">
+           </i>
+          </a>
+         </h6>
+        </div>
+        <div class="dropdown-header">
+         <h6>
+          <img src="https://styles.redditmedia.com/t5_31rhr0/styles/communityIcon_932haaltkhk51.png" style="height: 20px;padding-right: 5px;"/>
+          AmongUs-Competitive Season:
+          <a class="btn btn-outline-dark btn-sm px-2 ml-2" href="/amongus_auc/?tournament=Season 5" style="font-size: 0.8em">
+           05
+           <i class="fas fa-sort-amount-down">
+           </i>
+          </a>
+          <a class="btn btn-outline-dark btn-sm px-2 ml-2" href="/amongus_auc/?tournament=Season 4" style="font-size: 0.8em">
+           04
+           <i class="fas fa-sort-amount-down">
+           </i>
+          </a>
+         </h6>
+        </div>
+        <div class="dropdown-divider">
+        </div>
+        <div class="dropdown-header">
+         <i class="fas fa-trophy">
+         </i>
+         Past and Expired Tournaments
+        </div>
+        <div class="dropdown-header">
+         <h6>
+          <img src="/images/AmongUs/evnt_icon.png" style="height: 20px;padding-right: 5px;"/>
+          EVNT Tournament
+          <a class="btn btn-outline-dark btn-sm px-2 ml-2" href="/RAU_tournament/?tournament=EVNT Tournament 01" style="font-size: 0.8em">
+           01
+           <i class="fas fa-trophy">
+           </i>
+          </a>
+         </h6>
+        </div>
+        <div class="dropdown-header">
+         <h6>
+          <img src="/images/AmongUs/JellyImage.png" style="height: 20px;padding-right: 5px;"/>
+          Nutters' Community Tournaments
+          <a class="btn btn-outline-dark btn-sm px-2 ml-2" href="/RAU_tournament/?tournament=Nutters Community Tournament 02" style="font-size: 0.8em">
+           02
+           <i class="fas fa-trophy">
+           </i>
+          </a>
+          <a class="btn btn-outline-dark btn-sm px-2" href="/RAU_tournament_old/?tournament=Community Tournament 01" style="font-size: 0.8em">
+           01
+           <i class="fas fa-trophy">
+           </i>
+          </a>
+         </h6>
+        </div>
+        <div class="dropdown-header">
+         <h6>
+          <img src="/images/discord/amongus/Temp/Server_Wars.png" style="height: 20px;padding-right: 5px;"/>
+          Nutters vs AUR Tournament!
+          <a class="btn btn-outline-dark btn-sm px-2 ml-2" href="/RAU_tournament/?tournament=Nutters vs AUR 02" style="font-size: 0.8em">
+           02
+           <i class="fas fa-trophy">
+           </i>
+          </a>
+          <a class="btn btn-outline-dark btn-sm px-2" href="/RAU_tournament_old/?tournament=Nutters vs AUR 01" style="font-size: 0.8em">
+           01
+           <i class="fas fa-trophy">
+           </i>
+          </a>
+         </h6>
+        </div>
+        <div class="dropdown-header">
+         <h6>
+          <img src="/images/AmongUs/JellyImage.png" style="height: 20px;padding-right: 5px;"/>
+          Jellys' Tournament
+          <a class="btn btn-outline-dark btn-sm px-2 ml-2" href="/RAU_tournament_old/?tournament=Jellypeanut Tournament 01" style="font-size: 0.8em">
+           Main Event
+           <i class="fas fa-trophy">
+           </i>
+          </a>
+          <a class="btn btn-outline-dark btn-sm px-2" href="/RAU_tournament_old/?tournament=Nutters Preliminary Tournament" style="font-size: 0.8em">
+           Prelim
+           <i class="fas fa-trophy">
+           </i>
+          </a>
+         </h6>
+        </div>
+       </div>
+      </li>
+      <li class="nav-item dropdown">
+       <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="navbarDropdown3">
+        Tools
+        <i class="fas fa-tools">
+        </i>
+       </a>
+       <div aria-labelledby="navbarDropdown3" class="dropdown-menu">
+        <h1 class="dropdown-header">
+         Ranked Among Us
+        </h1>
+        <a class="dropdown-item" href="https://b.rankedamongus.com/" target="_blank">
+         <img src="/images/discord/amongus/amongus_reputation.png" style="height: 20px;padding-right: 5px;"/>
+         Among Us Collaborative
+         <br/>
+         Drawing Whiteboards
+         <i class="fas fa-external-link-alt">
+         </i>
+        </a>
+       </div>
+      </li>
+     </ul>
+    </div>
+    <button class="navbar-toggler" data-target="#navbarResponsive" data-toggle="collapse" type="button">
+     Socials
+     <br/>
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+     <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+       <a class="nav-link" href="https://discord.gg/5up">
+        <i class="fab fa-discord" style="font-size: 1.5em">
+        </i>
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="https://www.patreon.com/AznDumbum">
+        <i class="fab fa-patreon" style="font-size: 1.5em">
+        </i>
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="https://www.rankedamongus.com/invitebot">
+        <i class="fas fa-robot" style="font-size: 1.5em">
+        </i>
+       </a>
+      </li>
+     </ul>
+    </div>
+   </nav>
+   <div class="col-4" style="width:380px; padding-top: 20px">
+    <img class="logo" height="144" src="/images/Animated-Logo-Once-T.gif" style="float: left; margin-right: -20px; margin-bottom: -20px; padding: 5px;" width="144"/>
+    <img class="avatar avatarTop" height="128" src="https://cdn.discordapp.com/avatars/355550706369036288/09bc156ed0337f602d6283e09e739925.png?size=128" width="128"/>
+    <h1 style="display: inline-block; font-size: 2em; text-transform: uppercase; color: #ffffff; background-color: #151715;/*#000000;*/ padding: 0.01em 0.01em; width: auto; margin: 0.1em; -ms-transform: rotate(-2deg); /* IE 9 */ -webkit-transform: rotate(-2deg); /* Safari 3-8 */ transform: rotate(-2deg);">
+     .roobi
+    </h1>
+   </div>
+   <br/>
+   <div class="row">
+    <div class="col-md-1 d-none d-lg-block">
+    </div>
+    <div class="col-12 col-lg-10">
+     <h3 class="warning mt-1">
+      5UP Community - Player Among Us Stats
+     </h3>
+     <table class="matchResults table">
+      <tbody>
+       <tr>
+        <th class="topCol" scope="col">
+         As
+        </th>
+        <th class="topCol" scope="col">
+         Rank
+        </th>
+        <th class="topCol" scope="col">
+         MMR
+        </th>
+        <th class="topCol" scope="col">
+         Played
+        </th>
+        <th class="topCol" scope="col">
+         Won
+        </th>
+        <th class="topCol" scope="col">
+         Lost
+        </th>
+        <th class="topCol" scope="col">
+         Win %
+        </th>
+       </tr>
+       <tr>
+        <th align="center" scope="row" style="font: bold; color: royalblue; margin: 0; padding: 0;">
+         <img height="60px" src="/images/AmongUs/steam_AboutCrew_v2.png" style="padding: 0;margin: 0;"/>
+        </th>
+        <td align="center">
+         33
+        </td>
+        <td align="center">
+         1018
+        </td>
+        <td align="center">
+         79%
+        </td>
+        <td align="center">
+         27
+         <div style="font-size: 0.6em; font: bold; margin: -0.7em; color: cyan;">
+          Win Streak:8
+          <br/>
+          Best Streak:8
+         </div>
+        </td>
+        <td align="center">
+         7
+         <div style="font-size: 0.6em; font: bold; margin: -0.7em; color: darkcyan;">
+          Lose Streak:0
+          <br/>
+          Worst Streak:2
+         </div>
+        </td>
+        <td align="center">
+         79%
+        </td>
+       </tr>
+       <tr>
+        <th align="center" scope="row" style="font: bold; color: red; margin: 0; padding: 0;">
+         <img height="60px" src="/images/AmongUs/steam_AboutImpostor_v2.png" style="padding: 0;margin: 0;"/>
+        </th>
+        <td align="center">
+         58
+        </td>
+        <td align="center">
+         885
+         <div style="font-size: 0.6em; font: bold; margin: -0.7em; -ms-transform: rotate(-5deg); -webkit-transform: rotate(-5deg); transform: rotate(-5deg); color: lawngreen;">
+          UNSTABLE
+         </div>
+        </td>
+        <td align="center">
+         21%
+        </td>
+        <td align="center">
+         2
+         <div style="font-size: 0.6em; font: bold; margin: -0.7em; color: darkcyan;">
+          Win Streak:0
+          <br/>
+          Best Streak:2
+         </div>
+        </td>
+        <td align="center">
+         7
+         <div style="font-size: 0.6em; font: bold; margin: -0.7em; color: cyan;">
+          Lose Streak:7
+          <br/>
+          Worst Streak:7
+         </div>
+        </td>
+        <td align="center">
+         22%
+        </td>
+       </tr>
+       <tr>
+        <th align="center" scope="row" style="font: bold; text-decoration: underline; color: white;/*blueviolet;*/">
+         OVERALL
+        </th>
+        <td align="center">
+         41
+        </td>
+        <td align="center">
+         952
+         <div style="font-size: 0.6em; font: bold; margin: -0.7em; -ms-transform: rotate(-5deg); -webkit-transform: rotate(-5deg); transform: rotate(-5deg); color: lawngreen;">
+          UNSTABLE
+         </div>
+        </td>
+        <td align="center">
+         100%
+        </td>
+        <td align="center">
+         29
+         <div style="font-size: 0.6em; font: bold; margin: -0.7em; color: cyan;">
+          Win Streak:2
+          <br/>
+          Best Streak:6
+         </div>
+        </td>
+        <td align="center">
+         14
+         <div style="font-size: 0.6em; font: bold; margin: -0.7em; color: darkcyan;">
+          Lose Streak:0
+          <br/>
+          Worst Streak:3
+         </div>
+        </td>
+        <td align="center">
+         67%
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+    <div class="col-md-1 d-none d-lg-block">
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-1 d-none d-lg-block">
+    </div>
+    <div class="col-12 col-lg-10">
+     <h3 class="warning mt-1">
+      Recent 10 Results
+     </h3>
+     <table class="archiveResults table">
+      <tbody>
+       <tr>
+        <th class="topCol" scope="col">
+         ID#
+        </th>
+        <th class="topCol" scope="col">
+         Map
+        </th>
+        <th class="topCol" scope="col">
+         Played as
+        </th>
+        <th class="topCol" scope="col">
+         % to win
+        </th>
+        <th class="topCol" scope="col">
+         Result
+        </th>
+        <th class="topCol" scope="col">
+         +/-MMR
+        </th>
+       </tr>
+       <tr>
+        <th align="center" scope="row">
+         1030
+        </th>
+        <td align="center">
+         <img height="35px" src="/images/AmongUs/polus.png" style="padding: 0;margin: 0;"/>
+        </td>
+        <td align="center" style="padding: 0; margin: 0;">
+         <img height="50px" src="/images/AmongUs/steam_AboutCrew_v2.png" style="padding: 0;margin: 0;"/>
+        </td>
+        <td align="center">
+         86.00%
+        </td>
+        <td align="center">
+         <span style="color: green;">
+          Won
+         </span>
+        </td>
+        <td align="center">
+         +4.66
+         <div style="font-size: 0.4em; font: bold; margin: -0.7em; -ms-transform: rotate(-5deg); -webkit-transform: rotate(-5deg); transform: rotate(-5deg); color: lawngreen;">
+          103.93% of total
+         </div>
+        </td>
+       </tr>
+       <tr>
+        <th align="center" scope="row">
+         933
+        </th>
+        <td align="center">
+         <img height="35px" src="/images/AmongUs/polus.png" style="padding: 0;margin: 0;"/>
+        </td>
+        <td align="center" style="padding: 0; margin: 0;">
+         <img height="50px" src="/images/AmongUs/steam_AboutCrew_v2.png" style="padding: 0;margin: 0;"/>
+        </td>
+        <td align="center">
+         83.86%
+        </td>
+        <td align="center">
+         <span style="color: green;">
+          Won
+         </span>
+        </td>
+        <td align="center">
+         +4.06
+         <div style="font-size: 0.4em; font: bold; margin: -0.7em; -ms-transform: rotate(-5deg); -webkit-transform: rotate(-5deg); transform: rotate(-5deg); color: lawngreen;">
+          78.48% of total
+         </div>
+        </td>
+       </tr>
+       <tr>
+        <th align="center" scope="row">
+         931
+        </th>
+        <td align="center">
+         <img height="35px" src="/images/AmongUs/polus.png" style="padding: 0;margin: 0;"/>
+        </td>
+        <td align="center" style="padding: 0; margin: 0;">
+         <img height="50px" src="/images/AmongUs/steam_AboutImpostor_v2.png" style="padding: 0;margin: 0;"/>
+        </td>
+        <td align="center">
+         19.10%
+        </td>
+        <td align="center">
+         <span style="color: darkred;">
+          Loss
+         </span>
+        </td>
+        <td align="center">
+         -6.22
+         <div style="font-size: 0.4em; font: bold; margin: -0.7em; -ms-transform: rotate(-5deg); -webkit-transform: rotate(-5deg); transform: rotate(-5deg); color: lawngreen;">
+          101.85% of total
+         </div>
+        </td>
+       </tr>
+       <tr>
+        <th align="center" scope="row">
+         930
+        </th>
+        <td align="center">
+         <img height="35px" src="/images/AmongUs/polus.png" style="padding: 0;margin: 0;"/>
+        </td>
+        <td align="center" style="padding: 0; margin: 0;">
+         <img height="50px" src="/images/AmongUs/steam_AboutCrew_v2.png" style="padding: 0;margin: 0;"/>
+        </td>
+        <td align="center">
+         72.02%
+        </td>
+        <td align="center">
+         <span style="color: green;">
+          Won
+         </span>
+        </td>
+        <td align="center">
+         +9.84
+         <div style="font-size: 0.4em; font: bold; margin: -0.7em; -ms-transform: rotate(-5deg); -webkit-transform: rotate(-5deg); transform: rotate(-5deg); color: lawngreen;">
+          109.95% of total
+         </div>
+        </td>
+       </tr>
+       <tr>
+        <th align="center" scope="row">
+         911
+        </th>
+        <td align="center">
+         <img height="35px" src="/images/AmongUs/polus.png" style="padding: 0;margin: 0;"/>
+        </td>
+        <td align="center" style="padding: 0; margin: 0;">
+         <img height="50px" src="/images/AmongUs/steam_AboutImpostor_v2.png" style="padding: 0;margin: 0;"/>
+        </td>
+        <td align="center">
+         20.76%
+        </td>
+        <td align="center">
+         <span style="color: darkred;">
+          Loss
+         </span>
+        </td>
+        <td align="center">
+         -6.78
+         <div style="font-size: 0.4em; font: bold; margin: -0.7em; -ms-transform: rotate(-5deg); -webkit-transform: rotate(-5deg); transform: rotate(-5deg); color: lawngreen;">
+          102.17% of total
+         </div>
+        </td>
+       </tr>
+       <tr>
+        <th align="center" scope="row">
+         910
+        </th>
+        <td align="center">
+         <img height="35px" src="/images/AmongUs/polus.png" style="padding: 0;margin: 0;"/>
+        </td>
+        <td align="center" style="padding: 0; margin: 0;">
+         <img height="50px" src="/images/AmongUs/steam_AboutCrew_v2.png" style="padding: 0;margin: 0;"/>
+        </td>
+        <td align="center">
+         78.34%
+        </td>
+        <td align="center">
+         <span style="color: green;">
+          Won
+         </span>
+        </td>
+        <td align="center">
+         +7.6
+         <div style="font-size: 0.4em; font: bold; margin: -0.7em; -ms-transform: rotate(-5deg); -webkit-transform: rotate(-5deg); transform: rotate(-5deg); color: lawngreen;">
+          109.63% of total
+         </div>
+        </td>
+       </tr>
+       <tr>
+        <th align="center" scope="row">
+         909
+        </th>
+        <td align="center">
+         <img height="35px" src="/images/AmongUs/polus.png" style="padding: 0;margin: 0;"/>
+        </td>
+        <td align="center" style="padding: 0; margin: 0;">
+         <img height="50px" src="/images/AmongUs/steam_AboutCrew_v2.png" style="padding: 0;margin: 0;"/>
+        </td>
+        <td align="center">
+         73.75%
+        </td>
+        <td align="center">
+         <span style="color: green;">
+          Won
+         </span>
+        </td>
+        <td align="center">
+         +8.22
+         <div style="font-size: 0.4em; font: bold; margin: -0.7em; -ms-transform: rotate(-5deg); -webkit-transform: rotate(-5deg); transform: rotate(-5deg); color: lawngreen;">
+          97.83% of total
+         </div>
+        </td>
+       </tr>
+       <tr>
+        <th align="center" scope="row">
+         908
+        </th>
+        <td align="center">
+         <img height="35px" src="/images/AmongUs/polus.png" style="padding: 0;margin: 0;"/>
+        </td>
+        <td align="center" style="padding: 0; margin: 0;">
+         <img height="50px" src="/images/AmongUs/steam_AboutCrew_v2.png" style="padding: 0;margin: 0;"/>
+        </td>
+        <td align="center">
+         79.83%
+        </td>
+        <td align="center">
+         <span style="color: green;">
+          Won
+         </span>
+        </td>
+        <td align="center">
+         +6.02
+         <div style="font-size: 0.4em; font: bold; margin: -0.7em; -ms-transform: rotate(-5deg); -webkit-transform: rotate(-5deg); transform: rotate(-5deg); color: lawngreen;">
+          93.27% of total
+         </div>
+        </td>
+       </tr>
+       <tr>
+        <th align="center" scope="row">
+         811
+        </th>
+        <td align="center">
+         <img height="35px" src="/images/AmongUs/polus.png" style="padding: 0;margin: 0;"/>
+        </td>
+        <td align="center" style="padding: 0; margin: 0;">
+         <img height="50px" src="/images/AmongUs/steam_AboutImpostor_v2.png" style="padding: 0;margin: 0;"/>
+        </td>
+        <td align="center">
+         18.33%
+        </td>
+        <td align="center">
+         <span style="color: darkred;">
+          Loss
+         </span>
+        </td>
+        <td align="center">
+         -6.67
+         <div style="font-size: 0.4em; font: bold; margin: -0.7em; -ms-transform: rotate(-5deg); -webkit-transform: rotate(-5deg); transform: rotate(-5deg); color: lawngreen;">
+          113.58% of total
+         </div>
+        </td>
+       </tr>
+       <tr>
+        <th align="center" scope="row">
+         810
+        </th>
+        <td align="center">
+         <img height="35px" src="/images/AmongUs/polus.png" style="padding: 0;margin: 0;"/>
+        </td>
+        <td align="center" style="padding: 0; margin: 0;">
+         <img height="50px" src="/images/AmongUs/steam_AboutCrew_v2.png" style="padding: 0;margin: 0;"/>
+        </td>
+        <td align="center">
+         74.85%
+        </td>
+        <td align="center">
+         <span style="color: green;">
+          Won
+         </span>
+        </td>
+        <td align="center">
+         +9.31
+         <div style="font-size: 0.4em; font: bold; margin: -0.7em; -ms-transform: rotate(-5deg); -webkit-transform: rotate(-5deg); transform: rotate(-5deg); color: lawngreen;">
+          115.65% of total
+         </div>
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+    <div class="col-md-1 d-none d-lg-block">
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-1 d-none d-lg-block">
+    </div>
+    <div class="col-12 col-lg-10">
+     <h3 class="warning mt-1">
+      Impostor Server Player Stats
+     </h3>
+     <table class="scoreboard table">
+      <tbody>
+       <tr>
+        <th class="topCol" scope="col" width="20%">
+         Stat
+        </th>
+        <th class="topCol" colspan="3" scope="col" width="80%">
+         Chart
+        </th>
+       </tr>
+       <tr>
+        <th align="center" scope="row">
+         Profile
+        </th>
+        <td align="center" colspan="3">
+         <canvas height="600" id="profile" width="600">
+         </canvas>
+        </td>
+        <script>
+         /* STD Wins:0.11700345801909166*/
+						/* AVG Wins:0.7740*/
+						/** 0.037333333333333 */
+						/** 0 */
+                        const scale = 2;
+                        const steppingSize = 20;
+						const ctx = document.getElementById('profile').getContext('2d');
+						const data = {
+							labels: [
+								'Win-Rate',
+								'Survivability',
+								'Tasks/Kills & Ejects',
+								'Distance',
+								'Meeting Eff\'',
+							],
+							datasets:
+							[
+								{
+									label: 'Crewmate',
+									data: [
+										15.553600659173,
+										-13.102759158645,
+										-6.2835684730061,
+										25.532522406543,
+										-28.464311179566,
+									],
+									fill: true,
+									backgroundColor: 'rgba(36, 91, 255, 0.2)',
+									borderColor: 'rgb(36, 91, 255)',
+									pointBackgroundColor: 'rgb(36, 91, 255)',
+									pointBorderColor: '#fff',
+									pointHoverBackgroundColor: '#fff',
+									pointHoverBorderColor: 'rgb(36, 91, 255)'
+								},
+								{
+									label: 'Impostor',
+									data: [
+										-8.9128831058609,
+										-32.165091587611,
+										-1.2337465067523,
+										58.176162925115,
+										-22.597194187493,
+									],
+									fill: true,
+									backgroundColor: 'rgba(255, 0, 0, 0.2)',
+									borderColor: 'red',
+									pointBackgroundColor: 'red',
+									pointBorderColor: 'white',
+									pointHoverBackgroundColor: 'white',
+									pointHoverBorderColor: 'red'
+								}
+							]
+						};
+						const options = {
+							layout: {
+								padding: 5,
+							},
+							scales: {
+								r: {
+									angleLines:{
+										color: 'white',
+									},
+									max: 100,
+									min: -100,
+									ticks: {
+										stepSize: steppingSize,
+									},
+									grid: {
+										color: 'rgb(47,79,79)',
+									},
+									pointLabels: {
+										color: "white",
+										font: {
+											size: 16,
+										},
+									},
+								},
+							},
+							//color: "#fff",
+							plugins:{
+								legend: {
+									labels: {
+										color: "white",
+										font: {
+											size: 20,
+										}
+									}
+								},
+							},
+							responsive: false,
+							maintainAspectRatio: true,
+						};
+						const config = {
+							type: 'radar',
+							data: data,
+							options: options,
+						};
+						const myRadarChart = new Chart(ctx, config);
+        </script>
+       </tr>
+       <tr>
+        <th align="center" scope="row">
+         Games Played
+        </th>
+        <td align="center" colspan="3">
+         <canvas height="600" id="Games" width="600">
+         </canvas>
+         <script>
+          const roleColors = ['rgba(36, 91, 255, 0.8)','rgba(255,0,0,0.8)','rgb(54, 162, 235)','rgb(255, 99, 132)','rgb(54, 162, 235)','rgb(255, 99, 132)']
+							const roleLabels = ['Played Crew','Played Impostor','Crew Wins','Crew Loses','Impostor Wins','Impostor Loses',]
+							const ctxGames = document.getElementById('Games').getContext('2d');
+							const dataGames =
+							{
+								labels: roleLabels,
+								datasets:
+								[
+									{
+										label: 'Overall',
+										data: [32, 9,0,0,0,0],
+										backgroundColor: roleColors,
+										hoverOffset: 10,
+									},
+									{
+										label: 'Breaksdown',
+										data: [
+											0,
+											0,
+											26,
+											6,
+											2,
+											7,
+										],
+										backgroundColor: roleColors,
+										hoverOffset: 10,
+										weight:4,
+									}
+								]
+							};
+							const configGames = {
+								type: 'doughnut',
+								data: dataGames,
+								options: {
+									plugins:{
+										legend: {
+                        					onClick: (e) => e.stopPropagation(),
+											labels: {
+												color: "#fff",
+												font: {
+													size: 20,
+												}
+											}
+										},
+									},
+									responsive: false,
+									maintainAspectRatio: true,
+								}
+							};
+							const Games = new Chart(ctxGames, configGames);
+         </script>
+        </td>
+       </tr>
+       <tr>
+        <th align="center" scope="row">
+         Voting Accuracy
+         <br/>
+         CREW
+        </th>
+        <td align="center">
+         <canvas height="200" id="ctxcrew_Vote_For_ImpEjected" width="200">
+         </canvas>
+         <canvas height="200" id="crew_Vote_For" width="200">
+         </canvas>
+         <script>
+          const crew_VoteFor_ImpEjectedColors = [
+                                'rgb(60, 179, 113)','rgb(255, 50, 60)',
+                                'rgba(60, 179, 113, 0.8)','rgba(255, 50, 60, 0.8)',
+                                'rgb(60, 179, 113)','rgb(255, 204, 102)','rgb(255, 50, 60)',
+                                'rgba(60, 179, 113, 0.8)','rgba(255, 204, 102, 0.8)','rgba(255, 50, 60, 0.8)',
+                            ]
+                            const crew_Vote_ForLabels = [
+                                'Voted Impostor Out','Voted Crew Out',
+                                'AVG Voted Impostor Out %','AVG Voted Crew Out %',
+                                'Votes Agst\' Impostor','Vote Skip/Abstains','Votes Agst\' Crew',
+                                'AVG Agst\' Impostor %','AVG Skip/Abstains %','AVG Agst\' Crew %',
+                            ]
+                            const optionscrew_Vote_For = {
+                                plugins:{
+                                    legend: {
+                                        display: false
+                                    },
+                                },
+                                responsive: false,
+                                maintainAspectRatio: true,
+                                layout: {
+                                    padding: 10,
+                                },
+                            };
+
+                            const ctxcrew_Vote_For_ImpEjected = document.getElementById('ctxcrew_Vote_For_ImpEjected').getContext('2d');
+                            const datacrew_Vote_For_ImpEjected =
+                            {
+                                labels: crew_Vote_ForLabels,
+                                datasets:
+                                [
+                                    {
+                                        label: 'Population AVGs',
+                                        data: [0,0,68.4, 31.6],
+                                        backgroundColor: crew_VoteFor_ImpEjectedColors,
+                                        hoverOffset: 4,
+                                        weight: 1,
+                                    },
+                                    {
+                                        label: 'Voted toward Ejects',
+                                        data: [25, 18],
+                                        backgroundColor: crew_VoteFor_ImpEjectedColors,
+                                        hoverOffset: 4,
+                                        weight: 4,
+                                    },
+                                ]
+                            };
+                            const configcrew_Vote_For_ImpEjected = {
+                                type: 'doughnut',
+                                data: datacrew_Vote_For_ImpEjected,
+                                options: optionscrew_Vote_For,
+                            };
+                            const crew_Vote_For_ImpEjected = new Chart(ctxcrew_Vote_For_ImpEjected, configcrew_Vote_For_ImpEjected);
+
+                            const ctxcrew_Vote_For = document.getElementById('crew_Vote_For').getContext('2d');
+                            const datacrew_Vote_For =
+                            {
+                                labels: crew_Vote_ForLabels,
+                                datasets:
+                                [
+                                    {
+                                        label: 'Population AVGs',
+                                        data: [
+                                            0,0,0,0,0,0,0,
+                                            40.3,
+                                            33.65,
+                                            26.04                                        ],
+                                        backgroundColor: crew_VoteFor_ImpEjectedColors,
+                                        hoverOffset: 4,
+                                        weight: 1,
+                                    },
+                                    {
+                                        label: 'Votes',
+                                        data: [
+                                            0,0,0,0,
+                                            28,
+                                            31,
+                                            23,
+											0,0,0
+                                        ],
+                                        backgroundColor: crew_VoteFor_ImpEjectedColors,
+                                        hoverOffset: 4,
+                                        weight: 4,
+                                    },
+                                ]
+                            };
+                            const configcrew_Vote_For = {
+                                type: 'doughnut',
+                                data: datacrew_Vote_For,
+                                options: optionscrew_Vote_For,
+                            };
+                            const crew_Vote_For_Imp = new Chart(ctxcrew_Vote_For, configcrew_Vote_For);
+         </script>
+        </td>
+        <td align="center" colspan="2">
+         <h3>
+          Accuracy:
+         </h3>
+         54.9% Accuracy on Commited Votes
+         <br/>
+         58.14% Accuracy on Ejects
+         <br/>
+         37.8% used on Skips and Abstains
+         <br/>
+         <br/>
+         <h3>
+          Numbers:
+         </h3>
+         25 resulted Eject of Impostor
+         <br/>
+         18 resulted Eject of Crew
+         <br/>
+         <br/>
+         28 against Impostors
+         <br/>
+         23 against Crew
+         <br/>
+         27 skips
+         <br/>
+         4 abstained
+         <br/>
+        </td>
+       </tr>
+       <tr>
+        <th class="topCol" scope="col" width="20%">
+         Stat
+        </th>
+        <th class="topCol" scope="col" width="30%">
+         Crew
+        </th>
+        <th class="topCol" scope="col" width="30%">
+         Overall
+        </th>
+        <th class="topCol" scope="col" width="30%">
+         Imp
+        </th>
+       </tr>
+       <tr>
+        <th align="center" scope="row">
+         Games Played
+        </th>
+        <td align="center">
+         32
+        </td>
+        <td align="center">
+         41
+        </td>
+        <td align="center">
+         9
+        </td>
+       </tr>
+       <tr>
+        <th align="center" scope="row">
+         Wins:Loses
+        </th>
+        <td align="center">
+         <canvas height="200" id="crew_Wins" width="200">
+         </canvas>
+         <br/>
+         81.25%
+         <br/>
+         26W:6L
+         <br/>
+        </td>
+        <td align="center">
+         <canvas height="200" id="Wins" width="200">
+         </canvas>
+         <br/>
+         68.29%
+         <br/>
+         28W:13L
+         <br/>
+        </td>
+        <td align="center">
+         <canvas height="200" id="imp_Wins" width="200">
+         </canvas>
+         <br/>
+         22.22%
+         <br/>
+         2W:7L
+         <br/>
+        </td>
+        <script>
+         const winLoseColors = ['rgb(54, 162, 235)','rgb(255, 99, 132)','rgba(54, 162, 235, 0.8)','rgba(255, 99, 132, 0.8)']
+						const winLoseColors2 = winLoseColors
+						const winLoseLabels = ['Wins','Loses','Populations\'s AVG Win-rate','Populations\'s AVG Lose-rate']
+						const ctxWins = document.getElementById('Wins').getContext('2d');
+						const optionsWins = {
+							plugins:{
+								legend: {
+									display: false
+								},
+							},
+							responsive: false,
+							maintainAspectRatio: true,
+							layout: {
+								padding: 10,
+							},
+						}
+
+						const dataWins =
+						{
+							labels: winLoseLabels,
+							datasets:
+							[
+								{
+									label: 'Population\'s Rates',
+									data: [0,0,67.01, 32.99],
+									backgroundColor: winLoseColors,
+									hoverOffset: 4,
+									weight: 1,
+								},
+								{
+									label: 'Player',
+									data: [28, 13,0,0],
+									backgroundColor: winLoseColors,
+									hoverOffset: 4,
+									weight: 4,
+								},
+							]
+						};
+						const configWins = {
+							type: 'doughnut',
+							data: dataWins,
+							options: optionsWins,
+						};
+						const Wins = new Chart(ctxWins, configWins);
+
+						const ctxcrew_Wins = document.getElementById('crew_Wins').getContext('2d');
+						const datacrew_Wins =
+						{
+							labels: winLoseLabels,
+							datasets:
+							[
+								{
+									label: 'Population\'s Rates',
+									data: [0,0,77.4, 22.6],
+									backgroundColor: winLoseColors2,
+									hoverOffset: 4,
+									weight: 1,
+								},
+								{
+									label: 'Player',
+									data: [26, 6,0,0],
+									backgroundColor: winLoseColors,
+									hoverOffset: 4,
+									weight: 4,
+								},
+							]
+						};
+						const configcrew_Wins = {
+							type: 'doughnut',
+							data: datacrew_Wins,
+							options: optionsWins,
+						};
+						const crew_Wins = new Chart(ctxcrew_Wins, configcrew_Wins);
+
+						const ctximp_Wins = document.getElementById('imp_Wins').getContext('2d');
+						const dataimp_Wins =
+						{
+							labels: winLoseLabels,
+							datasets:
+							[
+								{
+									label: 'Population\'s Rates',
+									data: [0,0,26.7, 73.3],
+									backgroundColor: winLoseColors2,
+									hoverOffset: 4,
+									weight: 1,
+								},
+								{
+									label: 'Player',
+									data: [2, 7,0,0],
+									backgroundColor: winLoseColors,
+									hoverOffset: 4,
+									weight: 4,
+								},
+							]
+						};
+						const configimp_Wins = {
+							type: 'doughnut',
+							data: dataimp_Wins,
+							options: optionsWins,
+						};
+						const imp_Wins = new Chart(ctximp_Wins, configimp_Wins);
+        </script>
+       </tr>
+       <tr>
+        <th align="center" scope="row">
+         Survival
+        </th>
+        <td align="center">
+         <canvas height="200" id="crew_Alive" width="200">
+         </canvas>
+         Alive til end: 40.63% [13]
+         <br/>
+         Ejected: 6.25% [2]
+         <br/>
+         Murdered: 53.13% [17]
+         <br/>
+         Disconnected: 0% [0]
+         <br/>
+        </td>
+        <td align="center">
+         <canvas height="200" id="Alive" width="200">
+         </canvas>
+         Alive til end: 36.59% [15]
+         <br/>
+         Ejected: 21.95% [9]
+         <br/>
+         Murdered: 41.46% [17]
+         <br/>
+         Disconnected: 0% [0]
+         <br/>
+        </td>
+        <td align="center">
+         <canvas height="200" id="imp_Alive" width="200">
+         </canvas>
+         Alive til end: 22.22% [2]
+         <br/>
+         Ejected: 77.78% [7]
+         <br/>
+         <br/>
+         Disconnected: 0% [0]
+         <br/>
+        </td>
+        <script>
+         const aliveColors = ['rgb(60, 179, 113)','rgb(255, 204, 102)','rgb(255, 50, 60)','rgb(1, 1, 1)','rgba(60, 179, 113, 0.8)','rgba(255, 204, 102, 0.8)','rgba(255, 50, 60, 0.8)','rgba(1, 1, 1, 0.8)']
+						const aliveLabels = ['Alive','Ejected','Murdered','Disconnected','Population\'s Alive %','Population\'s Ejected %','Population\'s Murdered %','Population\'s Disconnected %',]
+						const ctxAlive = document.getElementById('Alive').getContext('2d');
+						const optionsAlive = {
+							plugins:{
+								legend: {
+									display: false
+								},
+							},
+							responsive: false,
+							maintainAspectRatio: true,
+							layout: {
+								padding: 10,
+							},
+						};
+
+						const dataAlive =
+						{
+							labels: aliveLabels,
+							datasets:
+							[
+								{
+									label: 'Population AVGs',
+									data: [0,0,0,0,42.04, 23.48, 33.72, 4.53],
+									backgroundColor: aliveColors,
+									hoverOffset: 4,
+									weight: 1,
+								},
+								{
+									label: 'Alive',
+									data: [15, 9, 17, 0],
+									backgroundColor: aliveColors,
+									hoverOffset: 4,
+									weight: 4,
+								},
+							]
+						};
+						const configAlive = {
+							type: 'doughnut',
+							data: dataAlive,
+							options: optionsAlive,
+						};
+						const Alive = new Chart(ctxAlive, configAlive);
+
+						const ctxcrew_Alive = document.getElementById('crew_Alive').getContext('2d');
+						const datacrew_Alive =
+						{
+							labels: aliveLabels,
+							datasets:
+							[
+								{
+									label: 'Population AVGs',
+									data: [0,0,0,0,45.8, 11.57, 42.42, 4.47],
+									backgroundColor: aliveColors,
+									hoverOffset: 4,
+									weight: 1,
+								},
+								{
+									label: 'Alive',
+									data: [13, 2, 17, 0],
+									backgroundColor: aliveColors,
+									hoverOffset: 4,
+									weight: 4,
+								},
+							]
+						};
+						const configcrew_Alive = {
+							type: 'doughnut',
+							data: datacrew_Alive,
+							options: optionsAlive,
+						};
+						const crew_Alive = new Chart(ctxcrew_Alive, configcrew_Alive);
+						
+						const ctximp_Alive = document.getElementById('imp_Alive').getContext('2d');
+						const dataimp_Alive =
+						{
+							labels: aliveLabels,
+							datasets:
+							[
+								{
+									label: 'Population AVGs',
+									data: [0,0,0,0,27.45, 69.68, 0, 4.75],
+									backgroundColor: aliveColors,
+									hoverOffset: 4,
+									weight: 1,
+								},
+								{
+									label: 'Alive',
+									data: [2, 7, 0, 0],
+									backgroundColor: aliveColors,
+									hoverOffset: 4,
+									weight: 4,
+								},
+							]
+						};
+						const configimp_Alive = {
+							type: 'doughnut',
+							data: dataimp_Alive,
+							options: optionsAlive,
+						};
+						const imp_Alive = new Chart(ctximp_Alive, configimp_Alive);
+        </script>
+       </tr>
+       <tr>
+        <th align="center" scope="row">
+         Alive After Meetings
+        </th>
+        <td align="center">
+         2.47/Game
+         <br/>
+         79
+         <br/>
+         2.68m/Game
+         <br/>
+        </td>
+        <td align="center">
+         2.34/Game
+         <br/>
+         96
+         <br/>
+         2.65m/Game
+         <br/>
+         <td align="center">
+          1.89/Game
+          <br/>
+          17
+          <br/>
+          2.52m/Game
+          <br/>
+         </td>
+        </td>
+       </tr>
+       <tr>
+        <th align="center" scope="row">
+         Minutes Alive
+        </th>
+        <td align="center">
+         7.54mins/Game
+         <br/>
+         241.21mins
+         <br/>
+         AVG: 8.43mins/Game
+         <br/>
+        </td>
+        <td align="center">
+         7.67mins/Game
+         <br/>
+         314.58mins
+         <br/>
+         AVG: 8.61mins/Game
+         <br/>
+        </td>
+        <td align="center">
+         8.15mins/Game
+         <br/>
+         73.38mins
+         <br/>
+         AVG: 9.34mins/Game
+         <br/>
+        </td>
+       </tr>
+       <tr>
+        <th align="center" scope="row">
+         Meeting Emergency
+        </th>
+        <td align="center">
+         Once Per 6.4 Games
+         <br/>
+         Total of 5 Reports
+         <br/>
+         AVG: Once Per 5.24
+        </td>
+        <td align="center">
+         Once Per 8.2 Games
+         <br/>
+         Total of 5 Reports
+         <br/>
+         AVG: Once Per 5.41
+        </td>
+        <td align="center">
+         Never
+         <br/>
+         Total of 0 Reports
+         <br/>
+         AVG: Once Per 6.2
+        </td>
+       </tr>
+       <tr>
+        <th align="center" scope="row">
+         Body Reports
+        </th>
+        <td align="center">
+         Once Per 4.57 Games
+         <br/>
+         Total of 7 Reports
+         <br/>
+         AVG: Once Per 4.34
+        </td>
+        <td align="center">
+         Once Per 5.86 Games
+         <br/>
+         Total of 7 Reports
+         <br/>
+         AVG: Once Per 4.34
+        </td>
+        <td align="center">
+         Never
+         <br/>
+         Total of 0 Reports
+         <br/>
+         AVG: Once Per 4.36
+        </td>
+       </tr>
+       <tr>
+        <th align="center" scope="row">
+         Distance Travelled
+        </th>
+        <td align="center">
+         222.64m/Game
+         <br/>
+         7,124.53m
+         <br/>
+         AVG: 229.28m/Game
+        </td>
+        <td align="center">
+         236.57m/Game
+         <br/>
+         9,699.42m
+         <br/>
+         AVG: 238.66m
+        </td>
+        <td align="center">
+         286.1m/Game
+         <br/>
+         2,574.89m
+         <br/>
+         AVG: 275.04m/Game
+        </td>
+       </tr>
+       <tr>
+        <th align="center" scope="row">
+         Tasks Completed
+        </th>
+        <td align="center">
+         6.34/Game
+         <br/>
+         203
+         <br/>
+         AVG: 6.51/Game
+        </td>
+        <td align="center">
+        </td>
+        <td align="center">
+        </td>
+       </tr>
+       <tr>
+        <th align="center" scope="row">
+         All Tasks Completed
+        </th>
+        <td align="center">
+         28.13%
+         <br/>
+         9
+         <br/>
+         AVG: 27.19%
+        </td>
+        <td align="center">
+        </td>
+        <td align="center">
+        </td>
+       </tr>
+       <tr>
+        <th align="center" scope="row">
+         First Blood!
+         <br/>
+         (Victim/Culprit)
+        </th>
+        <td align="center">
+         6.25%
+         <br/>
+         2
+         <br/>
+         AVG: 12.87%
+        </td>
+        <td align="center">
+        </td>
+        <td align="center">
+         22.22%
+         <br/>
+         2
+         <br/>
+         AVG: 51.21%
+        </td>
+       </tr>
+       <tr>
+        <th align="center" scope="row">
+         Murdered or Kills
+         <br/>
+         (Victim/Culprit)
+        </th>
+        <td align="center">
+        </td>
+        <td align="center">
+         <td align="center">
+          0.89/Game
+          <br/>
+          8 1.73
+         </td>
+        </td>
+       </tr>
+       <tr>
+        <th align="center" scope="row">
+         AFK with Tasks left
+        </th>
+        <td align="center">
+         0/Game
+         <br/>
+         0
+        </td>
+        <td align="center">
+        </td>
+        <td align="center">
+        </td>
+       </tr>
+       <tr>
+        <th align="center" scope="row">
+         Vent Visit
+        </th>
+        <td align="center">
+        </td>
+        <td align="center">
+        </td>
+        <td align="center">
+         0.44/Game
+         <br/>
+         4
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+    <div class="col-md-1 d-none d-lg-block">
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-lg-3 col-md-2 col-sm-1 d-none d-lg-block d-md-block">
+    </div>
+    <div class="col-12 col-lg-6 col-md-8 col-sm-10">
+     <h3 class="warning mt-1">
+      Top 10 Common Teammates
+     </h3>
+     <table class="scoreboard table">
+      <tbody>
+       <tr>
+        <th class="topCol" scope="col">
+         #
+        </th>
+        <th class="topCol" scope="col">
+         Player Name
+        </th>
+        <th class="topCol" scope="col">
+         MMR
+        </th>
+        <th class="topCol" scope="col">
+         # Matches [%]
+        </th>
+       </tr>
+       <tr class="clickable-row" data-href="./?tournament=Season 1&amp;id=246709866335305738">
+        <th align="center" class="clickable-td" scope="row">
+         1
+        </th>
+        <td align="left" class="clickable-td">
+         <img class="avatar" height="32" src="https://cdn.discordapp.com/avatars/246709866335305738/a_6ade2b91c67fdd55dbd241d8cac0dd3b.gif?size=64" width="32"/>
+         icy [𝙛𝙭] (Crewmate)
+        </td>
+        <td align="center" class="clickable-td">
+         1010
+        </td>
+        <td align="center" class="clickable-td">
+         17 [39%]
+        </td>
+       </tr>
+       <tr class="clickable-row" data-href="./?tournament=Season 1&amp;id=383095629166936068">
+        <th align="center" class="clickable-td" scope="row">
+         2
+        </th>
+        <td align="left" class="clickable-td">
+         <img class="avatar" height="32" src="https://cdn.discordapp.com/avatars/383095629166936068/6a2ea56ed9271e475851669f604b121a.png?size=64" width="32"/>
+         kate
+        </td>
+        <td align="center" class="clickable-td">
+         -1301
+        </td>
+        <td align="center" class="clickable-td">
+         16 [36%]
+        </td>
+       </tr>
+       <tr class="clickable-row" data-href="./?tournament=Season 1&amp;id=662442982233866243">
+        <th align="center" class="clickable-td" scope="row">
+         3
+        </th>
+        <td align="left" class="clickable-td">
+         <img class="avatar" height="32" src="https://cdn.discordapp.com/avatars/662442982233866243/2b3df7a61224437704552349659b1fce.png?size=64" width="32"/>
+         vvkf
+        </td>
+        <td align="center" class="clickable-td">
+         1000
+        </td>
+        <td align="center" class="clickable-td">
+         15 [34%]
+        </td>
+       </tr>
+       <tr class="clickable-row" data-href="./?tournament=Season 1&amp;id=531956906366074880">
+        <th align="center" class="clickable-td" scope="row">
+         4
+        </th>
+        <td align="left" class="clickable-td">
+         <img class="avatar" height="32" src="https://cdn.discordapp.com/avatars/531956906366074880/9fcfe6f3d539d1f1c067469c3a6592a7.png?size=64" width="32"/>
+         Marzay (Ranked Ace) ⥑Ðior⥏
+        </td>
+        <td align="center" class="clickable-td">
+         882
+        </td>
+        <td align="center" class="clickable-td">
+         12 [27%]
+        </td>
+       </tr>
+       <tr class="clickable-row" data-href="./?tournament=Season 1&amp;id=946242844757205112">
+        <th align="center" class="clickable-td" scope="row">
+         5
+        </th>
+        <td align="left" class="clickable-td">
+         <img class="avatar" height="32" src="https://cdn.discordapp.com/avatars/946242844757205112/c75ba7a5e4305ca91faae076f57ba87d.png?size=64" width="32"/>
+         Road to Rank warrior [𝙛𝙭]
+        </td>
+        <td align="center" class="clickable-td">
+         1016
+        </td>
+        <td align="center" class="clickable-td">
+         12 [27%]
+        </td>
+       </tr>
+       <tr class="clickable-row" data-href="./?tournament=Season 1&amp;id=585538346718068906">
+        <th align="center" class="clickable-td" scope="row">
+         6
+        </th>
+        <td align="left" class="clickable-td">
+         <img class="avatar" height="32" src="https://cdn.discordapp.com/avatars/585538346718068906/1524d9541345c9ba278cd69ec4acc844.png?size=64" width="32"/>
+         Ekko ⥑Ðior⥏ #teammina
+        </td>
+        <td align="center" class="clickable-td">
+         1004
+        </td>
+        <td align="center" class="clickable-td">
+         11 [25%]
+        </td>
+       </tr>
+       <tr class="clickable-row" data-href="./?tournament=Season 1&amp;id=608309722499776525">
+        <th align="center" class="clickable-td" scope="row">
+         7
+        </th>
+        <td align="left" class="clickable-td">
+         <img class="avatar" height="32" src="https://cdn.discordapp.com/avatars/608309722499776525/89b06dab891bd24611357bef9b9d0bba.png?size=64" width="32"/>
+         kleq
+        </td>
+        <td align="center" class="clickable-td">
+         1010
+        </td>
+        <td align="center" class="clickable-td">
+         11 [25%]
+        </td>
+       </tr>
+       <tr class="clickable-row" data-href="./?tournament=Season 1&amp;id=754200297018097745">
+        <th align="center" class="clickable-td" scope="row">
+         8
+        </th>
+        <td align="left" class="clickable-td">
+         <img class="avatar" height="32" src="https://cdn.discordapp.com/avatars/754200297018097745/6379c0e762e98827ec0a292d6aac4c8c.png?size=64" width="32"/>
+         fho ツ #teamShmurdda
+        </td>
+        <td align="center" class="clickable-td">
+         1004
+        </td>
+        <td align="center" class="clickable-td">
+         11 [25%]
+        </td>
+       </tr>
+       <tr class="clickable-row" data-href="./?tournament=Season 1&amp;id=466033623682908171">
+        <th align="center" class="clickable-td" scope="row">
+         9
+        </th>
+        <td align="left" class="clickable-td">
+         <img class="avatar" height="32" src="https://cdn.discordapp.com/avatars/466033623682908171/de7e7200c9362e056293df9dc4800df7.png?size=64" width="32"/>
+         Monstr
+        </td>
+        <td align="center" class="clickable-td">
+         460
+        </td>
+        <td align="center" class="clickable-td">
+         9 [20%]
+        </td>
+       </tr>
+       <tr class="clickable-row" data-href="./?tournament=Season 1&amp;id=179321382650249216">
+        <th align="center" class="clickable-td" scope="row">
+         10
+        </th>
+        <td align="left" class="clickable-td">
+         <img class="avatar" height="32" src="https://cdn.discordapp.com/avatars/179321382650249216/a_229fce8b20eeb3afb0ce6b6f77b57011.gif?size=64" width="32"/>
+         𝑀𝕣. 𝒿𝓊𝓋𝑒𝓃 [𝙛𝙭]
+        </td>
+        <td align="center" class="clickable-td">
+         1000
+        </td>
+        <td align="center" class="clickable-td">
+         9 [20%]
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+    <div class="col-lg-3 col-md-2 col-sm-1 d-none d-lg-block d-md-block">
+    </div>
+   </div>
+  </div>
+  <footer>
+   <div align="center" class="container-lg footer-nav">
+    <div style="width: 100%;position: fixed;bottom: 0;left: 0;z-index: 100">
+     <style>
+      .example_responsive_1 { width: 320px; height: 100px; }
+				@media(min-width: 500px) { .example_responsive_1 { width: 468px; height: 60px; } }
+				@media(min-width: 800px) { .example_responsive_1 { width: 728px; height: 90px; } }
+     </style>
+     <div class="container">
+      <ins class="adsbygoogle mx-auto example_responsive_1" data-ad-client="ca-pub-3124675610835549" data-ad-slot="2278564812">
+      </ins>
+      <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+					$(window).scroll(function(event) {
+						function footer(){
+							var scroll = $(window).scrollTop(); 
+							if(scroll<4000) $(".footer-nav").fadeIn("slow").addClass("show");
+							else $(".footer-nav").fadeOut("slow").removeClass("show");
+
+							clearTimeout($.data(this, 'scrollTimer'));
+							$.data(this, 'scrollTimer', setTimeout(function() {
+								if ($('.footer-nav').is(':hover')) footer();
+								else $(".footer-nav").fadeOut("slow");
+							}, 5000));
+						}
+						footer();
+					});
+      </script>
+     </div>
+    </div>
+   </div>
+   <br/>
+  </footer>
+  <script crossorigin="anonymous" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+  </script>
+  <script crossorigin="anonymous" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+  </script>
+  <script>
+   (function(){if (!document.body) return;var js = "window['__CF$cv$params']={r:'8707d9478eae8027',t:'MTcxMjQ3MDE2NS44MDEwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();
+  </script>
+ </body>
+</html>
