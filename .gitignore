@@ -402,9 +402,8 @@ __pycache__/
 
 # OpenCover UI analysis results
 OpenCover/
-/devenv
-/test_env
-*.csv
+/venv
 *.html
 !/.geo725856547632316427.html
 !/.roobi355550706369036288.html
+/html_files
