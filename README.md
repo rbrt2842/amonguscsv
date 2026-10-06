@@ -2,7 +2,9 @@
 
 This project turns saved Ranked Among Us player pages into a SQLite database
 and a Jupyter notebook workspace for exploring the stats and making graphs.
-The old CSV exports are archived in [`old/`](old/).
+The repository includes a built database snapshot, so the notebook can be used
+without downloading the original HTML archive. The old CSV exports are archived
+in [`old/`](old/).
 
 ## Open the notebook
 
@@ -15,8 +17,9 @@ Open this project folder in VS Code, then open
 - `players_with_voting`: the same rows with optional aggregate voting stats.
   Voting columns are empty for players whose pages had no voting data.
 
-The project environment and named kernel are already set up in this checkout.
-For a fresh setup, run these commands from the project folder:
+The database is available as `amongus.db` in the project folder. The project
+environment and named kernel are already set up in this checkout. For a fresh
+setup, run these commands from the project folder:
 
 ```sh
 python3 -m venv venv
@@ -50,18 +53,19 @@ players[["server_name", "season"]].drop_duplicates().sort_values(
 The notebook loads the percentages recorded on the site, but you can calculate
 your own from the underlying counts when you prefer a different formula.
 
-## Build or rebuild the database
+## Rebuild the database
 
-The generated database (`amongus.db`) and source archives are kept locally and
-aren’t stored in Git. Put `aznbot.zip` in the project folder, or use a directory
+The saved database is included in Git. The original HTML archive is not. To
+rebuild from source, put `aznbot.zip` in the project folder or use a directory
 of extracted HTML pages, then run:
 
 ```sh
 venv/bin/python build_database.py aznbot.zip
 ```
 
-The importer reads the ZIP directly without extracting it. To use an HTML
-directory or choose another output path:
+The importer reads the ZIP directly without extracting it. It updates matching
+records in an existing database; to rebuild from scratch, remove `amongus.db`
+first. To use an HTML directory or choose another output path:
 
 ```sh
 venv/bin/python build_database.py /path/to/html_pages --output /path/to/amongus.db

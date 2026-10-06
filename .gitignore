@@ -408,6 +408,7 @@ OpenCover/
 *Zone.Identifier
 /player_stats.csv
 *.db
+!/amongus.db
 *.sqlite
 *.sqlite3
 **/.ipynb_checkpoints/
