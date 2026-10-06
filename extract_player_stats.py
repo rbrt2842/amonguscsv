@@ -29,6 +29,7 @@ class PageParser(HTMLParser):
         self.avatar_url = None
         self.username = None
         self.in_h1 = False
+        self.h1_text = ''
         self.links = []
 
     def handle_starttag(self, tag, attrs):
@@ -36,7 +37,8 @@ class PageParser(HTMLParser):
         if tag == 'title':
             self.in_title = True
         elif tag == 'h1':
-            self.in_h1 = True
+            self.in_h1 = self.avatar_url is not None
+            self.h1_text = ''
         elif tag == 'img':
             classes = attrs.get('class', '').split()
             src = attrs.get('src', '')
@@ -58,6 +60,8 @@ class PageParser(HTMLParser):
             self.in_title = False
         elif tag == 'h1':
             self.in_h1 = False
+            if self.username is None and self.h1_text.strip():
+                self.username = self.h1_text.strip()
         elif tag in ('th', 'td') and self.cell is not None:
             self.row['cells'].append(self.cell)
             self.cell = None
@@ -72,7 +76,7 @@ class PageParser(HTMLParser):
         if self.in_title:
             self.title += data
         if self.in_h1:
-            self.username = (self.username or '') + data
+            self.h1_text += data
         if self.cell is not None:
             self.cell['text'] += data
 
