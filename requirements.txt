@@ -1,1 +1,3 @@
 pandas>=2.0
+matplotlib>=3.7
+ipykernel>=6.0
