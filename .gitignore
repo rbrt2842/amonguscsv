@@ -403,6 +403,14 @@ __pycache__/
 # OpenCover UI analysis results
 OpenCover/
 /venv
+# Local data archives and generated analysis outputs
+*.zip
+*Zone.Identifier
+/player_stats.csv
+*.db
+*.sqlite
+*.sqlite3
+**/.ipynb_checkpoints/
 *.html
 !/.geo725856547632316427.html
 !/.roobi355550706369036288.html
